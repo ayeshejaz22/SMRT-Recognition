@@ -1,0 +1,43 @@
+:root {
+  --calenderColour: #b3b3b3;
+}
+
+.calendar {
+  text-align: center;
+  margin: 25px 0 0 15px;
+}
+
+.calendar-year {
+  border: 4px;
+  border-style: solid solid none solid;
+  border-color: var(--calenderColour);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.full-year {
+  font-weight: 600;
+  color: var(--calenderColour);
+}
+
+.calendar-date-month {
+  border: 4px solid;
+  height: 65px;
+  line-height: 60px;
+  border-color: var(--calenderColour);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.date-month {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--calenderColour);
+}
+
+.location {
+  text-transform: uppercase;
+  color: var(--calenderColour);
+  font-weight: 700;
+  padding-top: 4px;
+}

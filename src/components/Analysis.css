@@ -1,0 +1,163 @@
+:root {
+  --pinkColour: #ff00b7;
+  --blue: #529bd4;
+  --grey: #4f5053;
+  --numColour: #7e7f81;
+}
+
+.analysis {
+  margin: 20px 0 0 0;
+  border: none;
+  width: 970px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.first-grid {
+  display: grid;
+  grid-template-columns: 400px auto;
+  padding: 15px;
+  margin: 0 0 0 10px;
+}
+
+.grid-item-4 h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 650;
+  margin: 5px 0 0 0;
+}
+
+.first-row {
+  display: grid;
+  grid-template-columns: 100px auto auto;
+}
+
+.circle-pink {
+  background-color: var(--pinkColour);
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  margin: 0;
+}
+
+.last-week-btn {
+  margin: 5px 0 0 80px;
+}
+
+.last-week-box {
+  border: 1px solid;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #bebec1;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.last-week-box:hover {
+  cursor: pointer;
+  color: #9d9da0;
+}
+
+.last-week-box svg {
+  padding: 2px 2px 0 0;
+}
+
+.statistics-row {
+  display: grid;
+  grid-template-columns: 80px 250px auto;
+}
+
+.second-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  height: 200px;
+  line-height: 240px;
+}
+
+.grid-item-6 {
+  height: 200px;
+}
+
+.percent {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.percent circle {
+  fill: none;
+  stroke-width: 3;
+  stroke: var(--pinkColour);
+  transform: translate(5px, 5px);
+  stroke-dasharray: 290;
+  stroke-dashoffset: 290;
+}
+
+.percent circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: white;
+}
+
+.percent-happy circle:nth-child(2) {
+  stroke-dashoffset: calc(290 - (290 * 45) / 100);
+  stroke: var(--pinkColour);
+}
+
+.percent-satisfied circle:nth-child(2) {
+  stroke-dashoffset: calc(290 - (290 * 35) / 100);
+  stroke: var(--blue);
+}
+
+.percent-sad circle:nth-child(2) {
+  stroke-dashoffset: calc(290 - (290 * 20) / 100);
+  stroke: var(--grey);
+}
+
+.emoji {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 41%;
+}
+
+.happy {
+  left: 29.05%;
+  color: var(--pinkColour);
+}
+
+.satisfied {
+  left: 38.9%;
+  color: var(--blue);
+}
+
+.sad {
+  left: 48.8%;
+  color: var(--grey);
+}
+
+.number {
+  position: absolute;
+  top: 65%;
+  color: var(--numColour);
+  font-weight: 500;
+}
+
+.num-happy {
+  left: 30%;
+}
+
+.num-satisfied {
+  left: 40%;
+}
+
+.num-sad {
+  left: 50%;
+}
+
+.number h2 span {
+  font-weight: lighter;
+}

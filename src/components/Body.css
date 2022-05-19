@@ -1,0 +1,9 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+}
+
+.hide-item {
+  width: 400px;
+}
